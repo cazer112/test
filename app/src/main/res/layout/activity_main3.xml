@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white2"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:paddingHorizontal="20dp">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="51dp"
+        >
+
+        <ImageView
+            android:backgroundTint="@color/white2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hamburger"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:text="Главная"
+            android:textAlignment="center"
+            android:textSize="32dp" />
+
+        <ImageView
+            android:id="@+id/korzina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_31"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        >
+    <SearchView
+
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/z"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fil"
+        />
+
+    </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Категории"
+            android:fontFamily="@font/raleway"
+            android:textSize="16dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="16dp"
+            tools:listitem="@layout/button"
+            android:id="@+id/filterss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1 "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Популярное"
+                android:fontFamily="@font/raleway"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Все"
+            android:textColor="@color/blue"
+            android:id="@+id/all"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+
+        <LinearLayout
+            android:id="@+id/sneakers"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/kr"
+            android:backgroundTint="@color/white">
+
+            <ImageView
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart"
+                />
+
+            <ImageView
+                android:layout_width="117dp"
+                android:layout_height="70dp"
+                android:src="@drawable/nike"
+
+                android:layout_marginHorizontal="21dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BEST SELLER"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/poppinsmid"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nike Air Max"
+                android:fontFamily="@font/raleway"
+                android:layout_marginLeft="9dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmid"
+                    android:text="₽752.00" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sneakers2"
+            android:layout_marginStart="33dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kr"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart" />
+
+            <ImageView
+                android:layout_width="117dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="21dp"
+
+                android:src="@drawable/nike" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsmid"
+                android:text="BEST SELLER"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:fontFamily="@font/raleway"
+                android:text="Nike Air Max" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmid"
+                    android:text="₽752.00" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="29dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1 "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Акции"
+                android:fontFamily="@font/raleway"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Все"
+                android:textColor="@color/blue"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:src="@drawable/sale"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+</LinearLayout>

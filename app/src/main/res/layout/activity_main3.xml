@@ -8,6 +8,7 @@
     android:background="@color/white2"
     android:layout_height="match_parent"
     tools:context=".MainActivity3"
+
     android:paddingHorizontal="20dp">
 
 

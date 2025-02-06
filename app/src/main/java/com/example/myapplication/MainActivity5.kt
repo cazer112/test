@@ -12,9 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity5 : AppCompatActivity() {
 
-    interface ProductOnClick{
-        fun onclick()
-    }
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,9 +21,9 @@ class MainActivity5 : AppCompatActivity() {
         setContentView(R.layout.activity_main5)
 
 
-        val interfaceonckick =  object :ProductOnClick{
+        val interfaceonckick = object : Interfce1 {
             override fun onclick() {
-                val intent = Intent(this@MainActivity5,MainActivity4::class.java)
+                val intent = Intent(this@MainActivity5, MainActivity4::class.java)
                 startActivity(intent)
             }
 

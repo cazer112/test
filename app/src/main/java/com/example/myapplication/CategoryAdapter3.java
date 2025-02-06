@@ -16,9 +16,9 @@ public class CategoryAdapter3 extends RecyclerView.Adapter<CategoryAdapter3.View
     private final LayoutInflater inflater;
     private final List<Integer> states;
 
-    private final MainActivity5.ProductOnClick productOnClick;
+    private final Interfce1 productOnClick;
 
-    CategoryAdapter3(Context context, List<Integer> states, MainActivity5.ProductOnClick productOnClick) {
+    CategoryAdapter3(Context context, List<Integer> states, Interfce1 productOnClick) {
         this.states = states;
         this.inflater = LayoutInflater.from(context);
         this.productOnClick = productOnClick;

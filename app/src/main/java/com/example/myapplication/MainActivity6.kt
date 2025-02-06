@@ -21,12 +21,6 @@ class MainActivity6 : AppCompatActivity() {
         prod.adapter = CategoryAdapter4(this, listOf(0, 1, 2, 3, 4, 5, 6, 7))
 
 
-        val linearLayout2 = findViewById<LinearLayout>(R.id.sneakers2)
-        linearLayout2.setOnClickListener{
-
-            val intent = Intent(this, MainActivity4::class.java)
-            startActivity(intent)
-        }
 
     }
 
